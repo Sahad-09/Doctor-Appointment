@@ -7,10 +7,6 @@ const navLinks = [
   },
   {
     path: "/doctors",
-    display: "Home",
-  },
-  {
-    path: "/home",
     display: "Find a doctor",
   },
   {
@@ -37,7 +33,7 @@ const Header = () => {
               <li key={index}>
                 <NavLink to={link.path}>
                   {link.display == "Login" ? (
-                    <button className=" bg-slate-500">{link.display}</button>
+                    <button className=" btn btn-primary">{link.display}</button>
                   ) : (
                     link.display
                   )}
